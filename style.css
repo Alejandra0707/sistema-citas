@@ -1,0 +1,344 @@
+:root {
+    --fondo: #C7E9B0;
+    --blanco: #FFFFFF;
+    --negro: #000;
+    --verde: #B3C99C;
+    --verdeOscuro: #99A98F;
+    --verdeOpaco: #A5DD9B;
+    --verdeFuerte: #45a049;
+    --gris: #F1F1F1;
+
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial;
+}
+
+
+body {
+    font-size: 16px; /* 1rem  = 10px */
+}
+
+main {
+    display: flex;
+}
+
+
+.nombre-doctora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondo);
+}
+
+.doctora {
+    text-align: center;
+    margin-left: 1rem;
+    background-color: var(--fondo);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin-top: 20rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.nombre-consultorio {
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    margin-top: 20rem;
+    width: 100%;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.boton-paciente {
+    background-color: var(--verde);
+    padding: 2rem 2.5rem; 
+    font-size: 2rem;
+    border-radius: 24px;  
+    border: none;
+    color: var(--blanco);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-paciente:hover {
+    background-color: #55AD9B;
+}
+
+.boton-citas {
+    background-color: var(--verdeOscuro);
+    padding: 2rem 2.5rem; 
+    font-size: 2rem;
+    border-radius: 24px;  
+    border: none;
+    color: var(--blanco);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-citas:hover {
+    background-color: #80BCBD;
+}
+
+.creditos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14.5rem;
+    padding: 1rem;
+    background-color: var(--fondo);
+}
+
+.creditos-consultorio {
+    background-color: var(--fondo);
+    color: var(--blanco);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.creditos-diseñador {
+    background-color: var(--fondo);
+    color: var(--blanco);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Formulario pacientes */
+
+.seccion-registro {
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 25rem;
+    max-width: 800px;
+    background-color: var(--gris) ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--negro);
+}
+
+.titulo-registro {
+    text-align: center;
+    color: #333;
+}
+
+.formulario-paciente {
+    border: none;
+    padding: 0;
+}
+
+.formulario-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.btn-submit {
+    background-color: var(--verdeOpaco);
+    color: var(--blanco);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--verdeFuerte);
+}
+
+
+/* Lista de Pacientes*/
+
+.titulo-lista-pacientes {
+    padding: 5rem;
+    background-color: var(--fondo);
+    text-align: center;
+}
+
+.tabla-pacientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .tabla-pacientes th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabla-pacientes th {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-pacientes tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+
+  /* Formulario citas médicas */
+
+.seccion-registro {
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 25rem;
+    max-width: 800px;
+    background-color: var(--gris);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--negro);
+}
+
+.titulo-registro {
+    text-align: center;
+    color: #333;
+}
+
+.formulario-cita {
+    border: none;
+    padding: 0;
+}
+
+.formulario-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="datetime-local"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.btn-submit {
+    background-color: var(--verdeOpaco);
+    color: var(--blanco);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--verdeFuerte);
+}
+
+/* Lista de Citas Médicas */
+
+.titulo-lista-citas {
+    padding: 5rem;
+    background-color: var(--fondo);
+    text-align: center;
+}
+
+.tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-citas th,
+.tabla-citas td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-citas th {
+    background-color: #f2f2f2;
+}
+
+.tabla-citas tr:hover {
+    background-color: #f5f5f5;
+}

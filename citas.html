@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Citas</title>
+</head>
+<body>
+    <header class="nombre-doctora">
+        <h2 class="doctora">Doctora: Myriam Elena Castañeda Beltrán.</h2>
+    </header>
+
+    <section class="seccion-registro">
+        <h2 class="titulo-registro">Formulario de Registro de Citas Médicas</h2>
+        <form>
+            <fieldset class="formulario-cita">
+                <legend class="formulario-titulo"> <strong>Registre la cita médica llenando todos los campos</strong></legend>
+                
+                <div class="form-group">
+                    <label for="id-paciente">ID Paciente</label>
+                    <input type="number" id="id-paciente" placeholder="Escriba el ID del Paciente" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="fecha-cita">Fecha y Hora de la Cita</label>
+                    <input type="datetime-local" id="fecha-cita" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="tipo-terapia">Tipo de Terapia</label>
+                    <input type="text" id="tipo-terapia" placeholder="Escriba el Tipo de Terapia" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="estado-cita">Estado de la Cita</label>
+                    <select id="estado-cita" required>
+                        <option value="Programada">Programada</option>
+                        <option value="Completada">Completada</option>
+                        <option value="Cancelada">Cancelada</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="notas">Notas</label>
+                    <textarea id="notas" placeholder="Notas adicionales"></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <input type="submit" value="Registrar Cita" class="btn-submit">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    
+    <table class="tabla-citas">
+        <thead>
+            <h2 class="titulo-lista-citas">Lista de Citas Médicas</h2>
+          <tr>
+            <th>ID Cita</th>
+            <th>ID Paciente</th>
+            <th>Fecha y Hora</th>
+            <th>Tipo de Terapia</th>
+            <th>Estado</th>
+            <th>Notas</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="citas-lista">
+          <!-- Aquí se insertarán los registros de citas -->
+        </tbody>
+    </table>
+    
+
+
+    <footer class="creditos">
+        <p class="creditos-consultorio">&copy; 2024 Terapias de Equilibrio Cuántico. Todos los derechos reservados.</p>
+        <p class="creditos-diseñador">Diseñado por Alejandra Díaz.</p>
+      </footer>
+    <script src="citas.js"></script>
+</body>
+</html>

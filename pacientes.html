@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro Pacientes</title>
+</head>
+<body>
+
+    <header class="nombre-doctora">
+        <h2 class="doctora">Doctora: Myriam Elena Castañeda Beltrán.</h2>
+    </header>
+
+    <section class="seccion-registro">
+        <h2 class="titulo-registro">Formulario de Registro</h2>
+        <form>
+            <fieldset class="formulario-paciente">
+                <legend class="formulario-titulo"> <strong>Registre al paciente llenando todos los campos</strong></legend>
+                
+                <div class="form-group">
+                    <label for="id-cedula">ID_Cédula</label>
+                    <input type="text" id="id-cedula" placeholder="Escriba la Cédula">
+                </div>
+    
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escriba Nombre y Apellido">
+                </div>
+    
+                <div class="form-group">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha-nacimiento">
+                </div>
+    
+                <div class="form-group">
+                    <label>Género:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="genero" value="femenino">
+                            Femenino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="masculino">
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="otro">
+                            Otro
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" placeholder="Escriba la Dirección">
+                </div>
+    
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" placeholder="Escriba la Ciudad">
+                </div>
+    
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Escriba su Teléfono">
+                </div>
+    
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" placeholder="Tu Correo">
+                </div>
+    
+                <div class="form-group">
+                    <label for="fecha-registro">Fecha de Registro</label>
+                    <input type="date" id="fecha-registro">
+                </div>
+    
+                <div class="form-group">
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    
+
+    <table class="tabla-pacientes">
+        <thead>
+            <h2 class="titulo-lista-pacientes">Lista de Registro de Pacientes</h2>
+          <tr>
+            <th>ID Cedula</th>
+            <th>Nombre</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Genero</th>
+            <th>Direccion</th>
+            <th>Ciudad</th>
+            <th>Teléfono</th>
+            <th>Ciudad</th>
+            <th>Correo</th>
+            <th>Fecha de Registro</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="pacientes-lista">
+          <!-- Aquí se insertarán los registros de pacientes -->
+        </tbody>
+      </table>
+
+    <footer class="creditos">
+        <p class="creditos-consultorio">&copy; 2024 Terapias de Equilibrio Cuántico. Todos los derechos reservados.</p>
+        <p class="creditos-diseñador">Diseñado por Alejandra Díaz.</p>
+      </footer>
+    <script src="pacientes.js"></script>
+</body>
+</html>
